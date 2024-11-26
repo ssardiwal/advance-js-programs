@@ -1,4 +1,4 @@
-let arr = [1, 2, , 4]; // 10
+let arr = [1, 2, , 4];
 
 // callback function
 function add10(item, index, arr) {
@@ -12,7 +12,7 @@ Array.prototype.customMap = function (cb) {
 	let result = new Array(this.length); // 'this' will take reference to the 'array' on which customMap will be used
 	for (let index = 0; index < this.length; index++) {
 		if (this[index]) {
-			// here we have to pass all 3 paramas which actual map have
+			// here we have to pass all 3 params which actual map have
 			result[index] = cb(this[index], index, this);
 			// actual map for reference :-> arr.map((value, index, array) => {});
 		}
